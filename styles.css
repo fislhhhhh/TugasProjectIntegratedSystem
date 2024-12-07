@@ -1,0 +1,21 @@
+/* File: styles.css */
+body, html {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth; /* Scroll smooth */
+  }
+  
+  .section {
+    height: 100vh; /* Tinggi setiap section = tinggi layar */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: white;
+  }
+  
+  #section1 { background-color: #3498db; }
+  #section2 { background-color: #2ecc71; }
+  #section3 { background-color: #e74c3c; }
+  #section4 { background-color: #9b59b6; }
+  
