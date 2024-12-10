@@ -9,18 +9,19 @@
 
   <script type="module" src="regist.js" defer></script>
   <script type="module" src="login.js" defer></script>
+  <script src="loginPageJ.js" defer> </script>
   <title>#BestieKampus</title>
 </head>
 <body>
     <header>
         <img src="img/logocompre.png" onclick="window.location.href='index.html';" alt="">
-        <div>
+        <div onclick="scrollToSection('loginHal3')" class="bHeader">
             <p class="pHeader">Products</p>
         </div>
-        <div>
+        <div onclick="scrollToSection('loginHal4')" class="bHeader">
             <p class="pHeader">About Me</p>
         </div>
-        <div id="forSignupDiv">
+        <div id="forSignupDiv" onclick="scrollToSection('loginHal1')">
             <p id="forSignup">Get Started</p>
         </div>
        
@@ -120,7 +121,7 @@
                                 </div>
                                 <div class="remember-forgot">
                                     <span>Not a warrior yet ?</span>
-                                    <a href="#" onclick="toggleContent()"> Sign Up </a>
+                                    <a id="signuPu" href="#" onclick="toggleContent()"> Sign Up </a>
                                 </div>
                             </form>
                         </div>
@@ -154,7 +155,7 @@
                                 </div>
                                 <div class="remember-forgot">
                                     <span>Already a warrior  ?</span>
-                                    <a href="#" onclick="toggleContent()"> Log In </a>
+                                    <a id="loginPu" href="#" onclick="toggleContent()"> Log In </a>
                                 </div>
                             </form>
                         </div>
@@ -171,12 +172,12 @@
                 <div class="rightSide">
                     <img src="img/FIX_MFaishal.JPG" alt="Muhammad Faishal Firdaus" id="fotosal">
                     <div class="profil">
-                        <img src="img/linke.png" alt="">
-                        <img src="img/github.png" alt="">
-                        <img src="img/webP.png" alt="">
-                        <img src="img/instagram.png" alt="">
-                        <img src="img/twitter.png" alt="">
-                        <img src="img/tiktok.png" alt="">
+                        <img src="img/linke.png" alt=""  onclick="window.open('https://www.linkedin.com/in/muhammad-faishal-firdaus-660458311/', '_blank')">
+                        <img src="img/github.png" alt="" onclick="window.open('https://github.com/fislhhhhh', '_blank')">
+                        <img src="img/webP.png" alt="" onclick="window.open('https://basic-web-porto-html-css.vercel.app/', '_blank')">
+                        <img src="img/instagram.png" alt="" onclick="window.open('https://www.instagram.com/fislhhhhh/', '_blank')">
+                        <img src="img/twitter.png" alt="" onclick="window.open('https://x.com/FaiYashajin', '_blank')">
+                        <img src="img/tiktok.png" alt="" onclick="window.open('_blank')">
                     </div>
                 </div>
                 <div class="leftSide">
@@ -213,7 +214,7 @@
         </section>
     </section>
     
-    <script src="loginPageJ.js"> </script>
+   
 </body>
 
 </html>

@@ -11,10 +11,11 @@
 // });
 const dynamicImage = document.getElementById('loginWrap');
 const description = document.getElementById('signUpWrap');
-const loginDy = document.getElementById('loginDy');
-const signUpDy = document.getElementById('signUpDy');
+const loginDy = document.getElementById('loginPu');
+const signUpDy = document.getElementById('signuPu');
 
 let isImageVisible = true; 
+
 
 function toggleContent() {
     if (isImageVisible) {
@@ -34,9 +35,20 @@ function toggleContent() {
     isImageVisible = !isImageVisible;
 }
 
+loginDy.addEventListener('click', function(event) {
+    event.preventDefault(); 
+});
 
+signUpDy.addEventListener('click', function(event) {
+    event.preventDefault(); 
+}); 
 
-
+function scrollToSection(sectionId) {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
 
 window.onload = function() {
     dynamicImage.classList.add('active');

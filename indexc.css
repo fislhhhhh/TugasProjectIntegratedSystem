@@ -81,6 +81,9 @@ header .homeButton {
     margin-right: auto;
 }
 
+.bHeader, #forSignupDiv {
+    cursor: pointer;
+}
 
 /* Bagian Utama */
 
@@ -173,14 +176,19 @@ header .homeButton {
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;  
 }
-
-.buttonTemp:hover {
+#forSignup:hover{
+    background: rgb(237, 225, 211); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), 0 12px 24px rgba(0, 0, 0, 0.2); 
+    transform: translateY(-2px);
+    color: rgb(126, 85, 57);
+}
+.buttonTemp:hover,  .bHeader:hover {
     background: rgba(255, 255, 255, 0.3);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), 0 12px 24px rgba(0, 0, 0, 0.2); 
     transform: translateY(-2px);
 }
 
-.buttonTemp:active {
+.buttonTemp ,  .bHeader:active {
     transform: translateY(2px);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
 }
