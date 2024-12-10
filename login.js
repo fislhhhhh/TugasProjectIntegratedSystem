@@ -6,12 +6,12 @@
 
   // Your web app's Firebase configuration
   const firebaseConfig = {
-    apiKey: "AIzaSyD7151PmL_95tV61tMU4wcBYq5VuYKRaGw",
-    authDomain: "fisllhhhhhvlab.firebaseapp.com",
-    projectId: "fisllhhhhhvlab",
-    storageBucket: "fisllhhhhhvlab.firebasestorage.app",
-    messagingSenderId: "987597358552",
-    appId: "1:987597358552:web:67a3d00827367a9ad91ead"
+    apiKey: "AIzaSyCMb_NO8rIYtbLs4GhVb1YmKbjhUP5nzP8",
+    authDomain: "integratedsystem-9fc21.firebaseapp.com",
+    projectId: "integratedsystem-9fc21",
+    storageBucket: "integratedsystem-9fc21.firebasestorage.app",
+    messagingSenderId: "167441433188",
+    appId: "1:167441433188:web:99f0ce1206f7ed96635571"
   };
 
   // Initialize Firebase
@@ -38,7 +38,7 @@
   .catch((error) => {
     const errorCode = error.code;
     const errorMessage = error.message;
-    alert('login akun gagal')
+    alert(errorMessage);
     // ..
   });
   })
