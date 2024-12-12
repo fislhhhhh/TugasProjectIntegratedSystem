@@ -1,23 +1,93 @@
 <html lang="en">
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/indexc.css">
-  <title>ImunWar</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/indexc.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+  
+    <script type="module" src="regist.js" defer></script>
+    <script type="module" src="login.js" defer></script>
+    <script type="module"  src="loginPageJ.js" defer> </script>
 </head>
-<body>
-    <header>
-        <img src="img/logocompre.png" onclick="window.location.href='index.html';" alt="">
-        <img src="img/homiere.png" onclick="window.location.href='index.html';" alt="" class="homeButton">
-        <button class="buttonHeader"  type="button" onclick="window.location.href='help.html';">Help</button>
-        <button class="buttonHeader"  type="button" onclick="window.location.href='dictionary.html';">Dictionary</button>
+<body class="bodyBukanHome">
+    <header class="bukanHome">
+        <button onclick="toggleMenu()">menu</button>
+        <img src="img/logola.png" onclick="window.location.href='index.html';" alt="">
+        
+       
+       
     </header>
+    <div class="sideMenu">
+        <p>Dashboard</p>
+        <p>Profil</p>
+        <p>User Profilling</p>
+        <p>Journey</p>
+        <p>To-Do</p>
+        <P>Schedule</P>
+        <p>Setting</p>
+        <p>News</p>
+    </div>
     <section class="content">
-        <div class="upper">
-            <img id="dynamicImage" src="img/name.png" alt="Grammar Defense">
-            <p id="description" >A game where you defend the castle by fixing grammar mistakes!</p>
+        <div class="pickBar">
+            <div class="profilingPrompt">
+                <div class="profilingPromptContent">
+                  🌟 <strong>Kenali dirimu lebih baik!</strong><br>
+                  Lengkapi profilmu untuk mendapatkan rekomendasi aktivitas yang sesuai dengan minat dan bakatmu.
+                </div>
+              </div>
+            <div class="searchBarContainer">
+                <input 
+                  type="text" 
+                  class="searchBar" 
+                  placeholder="Cari aktivitas yang diinginkan...">
+              </div>
+            
+              <!-- Buttons for Types -->
+              <div class="buttonContainer">
+                <button class="btn akademik">Akademik</button>
+                <button class="btn organisasi">Organisasi</button>
+                <button class="btn magang">Magang</button>
+                <button class="btn kepanitiaan">Kepanitiaan</button>
+              </div>
         </div>
-        <div class="bottom">
-            <a href="page2.html"><button class="buttonTemp">Defend Now!</button></a>
+        <div class="activityList">
+            <div class="activityC">
+                <div class="recommendedActivities">
+                  <h3>Aktivitas yang Direkomendasikan</h3>
+                  <div class="recommendationList">
+                    <div class="activityBox">Rekomendasi 1</div>
+                    <div class="activityBox">Rekomendasi 2</div>
+                    <div class="activityBox">Rekomendasi 3</div>
+                    <div class="activityBox">Rekomendasi 4</div>
+                    <div class="activityBox">Rekomendasi 1</div>
+                    <div class="activityBox">Rekomendasi 2</div>
+                    <div class="activityBox">Rekomendasi 3</div>
+                    <div class="activityBox">Rekomendasi 4</div>
+                    <div class="activityBox">Rekomendasi 1</div>
+                    <div class="activityBox">Rekomendasi 2</div>
+                    <div class="activityBox">Rekomendasi 3</div>
+                    <div class="activityBox">Rekomendasi 4</div>
+                  </div>
+                </div>
+              
+                <div class="otherActivities">
+                  <h3>Aktivitas Lainnya</h3>
+                  <div class="otherActivityList">
+                    <div class="activityBox">Aktivitas 1</div>
+                    <div class="activityBox">Aktivitas 2</div>
+                    <div class="activityBox">Aktivitas 3</div>
+                    <div class="activityBox">Aktivitas 4</div>
+                    <div class="activityBox">Aktivitas 5</div>
+                    <div class="activityBox">Aktivitas 6</div>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="activityDesc">
+                <h3>Deskripsi Aktivitas</h3>
+                <p>Pilih salah satu aktivitas di sebelah kiri untuk melihat detail deskripsinya di sini.</p>
+              </div>
         </div>
     </section>
     <script src="indexj.js"> </script>

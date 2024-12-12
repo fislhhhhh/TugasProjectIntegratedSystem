@@ -4,7 +4,6 @@
   // TODO: Add SDKs for Firebase products that you want to use
   // https://firebase.google.com/docs/web/setup#available-libraries
 
-  // Your web app's Firebase configuration
   const firebaseConfig = {
     apiKey: "AIzaSyCMb_NO8rIYtbLs4GhVb1YmKbjhUP5nzP8",
     authDomain: "integratedsystem-9fc21.firebaseapp.com",
@@ -32,6 +31,7 @@
     alert('login akun...')
     alert('akun terlogin')
     window.location.href = "index2.html";
+    onLogin = true;
 
     // ...
   })

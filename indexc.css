@@ -6,29 +6,18 @@ body, html, .scrollPage {
 body,html{
     margin: 0;
     padding: 0;
-    scroll-behavior: smooth; /* Scroll smooth */
-    overflow-y: auto;
+    scroll-behavior: smooth; 
+    overflow-y:visible;
 }
-.scrollPage {
-    /* seluruh layar*/
-    margin: 0;
-    padding: 0;
-    background-color: rgb(237, 225, 211);
-    padding-top: 5%;
-    background-repeat: no-repeat;
-    display: flex;
-    flex-direction: column;
-    height:89%;
+
+.bodyBukanHome{
+    height: auto;
     width: 100%;
- 
-
 }
+/*--------------------*/
 
-
-
-
- /* Bagian Header */
-header {
+.bukanHome{
+    display: flex;
     display: flex;
     position: fixed;
     height: 10%;
@@ -36,66 +25,259 @@ header {
     background-color:rgb(237, 225, 211); 
     justify-content: end;
     z-index: 10;
-
-
-  
 }
-
-header img {
-    height: 100%;
-    margin-right: auto;
-    padding-left: 10px;
-    transition: 0.5s;
-    align-self: center;
-}
-
-header div {
-    background-color: rgba(255, 255, 255, 0);
-    height: 100%;
-    width: 10%;
-    border: 0;
-    font-size: 15px;
-    display: flex;
-    font-weight: 700;
-    align-items: center;
-    font-family: "Montserrat", sans-serif;
-    transition: 0.5s;
-    margin: 0;
-    justify-content: center;
-
-
-}
-header div p{
-    align-self: center;
+.bukanHome img{
+    height: 70%;
     justify-self: center;
-    padding: 5px 20px;
-}
-
-header .homeButton {
-    height: 50%;
-    width: auto;
     align-self: center;
-    justify-self: center;
+    margin: auto;
     padding: 0;
-    margin-left: auto;
-    margin-right: auto;
 }
 
-.bHeader, #forSignupDiv {
-    cursor: pointer;
+.sideMenu {
+    padding-top: 7%;
+    padding-left: 1rem;
+    width: 20%;
+    background-color: #fff8e7; /* Warna lembut untuk tampilan modern */
+    height: 90%;
+    position: fixed;
+    transition: all 0.5s ease-in-out; /* Transisi lebih halus */
+    font-family: "Montserrat", sans-serif;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Bayangan untuk efek 3D */
+    border-radius: 10px; /* Sudut melengkung */
+    overflow-y: auto; /* Tambahkan scroll jika konten terlalu panjang */
+    z-index: 9;
 }
 
+.sideMenu p {
+    margin: 1rem 0;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    color: #555; /* Warna teks netral */
+    cursor: pointer; /* Menambahkan pointer untuk interaksi */
+    border-radius: 5px; /* Sudut melengkung pada elemen */
+    transition: background-color 0.3s ease-in-out; /* Efek hover */
+}
+
+.sideMenu p:hover {
+    background-color: #f7d9a6; /* Warna hover yang menarik */
+    color: #000; /* Kontras lebih baik saat dihover */
+}
+
+
+.sideMenu button:hover {
+    background-color: #f59e68; /* Warna hover untuk tombol */
+}
+
+.sideMenu.inactive{
+    transform: translateX(-100%);
+}
+.sideMenu p{
+    margin: 14%;
+    font-size: 20px;
+}
 /* Bagian Utama */
-
-
 .content {
     /* Konten Utama */
     width: 100%;
-    height: 62%;
+    height: auto;
     display: flex;
     flex-direction: column;
-    max-width: 100vw; 
+    overflow-y: auto;
 }
+
+.content .pickBar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 56px;
+    height: 252px;
+    width: 100%;
+    background-color: rgb(126, 85, 57);
+    margin: 0;
+    margin-bottom: 20px;
+}
+.profilingPrompt {
+    background-color: #f7d9a6;
+    text-align: center;
+    margin-bottom: 15px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .profilingPromptContent {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+ 
+  }
+  
+  .profilingPromptContent strong {
+    color: #e76f51;
+  }
+  
+  
+  .searchBarContainer {
+    padding: 0;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .searchBar {
+    width: 60%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .buttonContainer {
+    display: flex;
+    margin-top: 10px;
+    width: 70%;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .btn {
+    color: rgb(126, 85, 57);
+    padding: 10px 20px;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    height: 85%;
+    width: 30%;
+    background: linear-gradient(135deg, rgba(237, 225, 211, 1) 0%, rgba(201, 180, 151, 1) 150%);
+    margin: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2), 0 8px 20px rgba(0, 0, 0, 0.1);
+    font-weight: bolder;
+    letter-spacing :1px; 
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    
+  }
+  /* .activityList{
+    display: flex;
+    flex-direction: row;
+    background-color:rgb(237, 225, 211); 
+    height: 100%;
+  }
+  .activityC {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    width: 60%;
+    margin: 10px;
+  }
+  
+  .activityBox {
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s;
+  }
+  
+  .activityBox:hover {
+    transform: scale(1.05);
+    background-color: #e0f7fa;
+  }
+  
+  .activityDesc {
+    width: 40%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  } */
+  .activityList {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(237, 225, 211);
+    height: 100%;
+  }
+  
+  .activityC {
+    display: grid;
+    grid-template-columns: 1fr; /* Satu kolom untuk scrolling */
+    gap: 20px;
+    width: 60%;
+    max-height: 600px; /* Batas tinggi untuk area scrolling */
+    overflow-y: auto; /* Scroll vertikal */
+    padding: 10px;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1); /* Memberikan efek 3D */
+    background-color: #fff; /* Warna latar */
+    border-radius: 10px; /* Sudut melengkung */
+  }
+  .recommendedActivities, .otherActivities {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .recommendationList, .otherActivityList {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 15px;
+    margin-top: 15px;
+  }
+  .activityBox {
+    background-color: #f4f4f4;
+    height: 200px;
+    width: 260px;
+    padding: 30px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    font-size: 18px;
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s;
+  }
+  
+  .activityBox:hover {
+    transform: scale(1.05);
+    background-color: #e0f7fa;
+  }
+  
+  .activityDesc {
+    width: 40%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    overflow-y: auto; /* Tambahkan scroll jika deskripsi panjang */
+    max-height: 600px; /* Batas tinggi deskripsi */
+  }
+  
+  /* .btn.akademik {
+    
+  }
+  
+  .btn.organisasi {
+  
+  }
+  
+  .btn.magang {
+   
+  }
+  
+  .btn.kepanitiaan {
+
+  }
+   */
 
 .content .upper {
     width: 100%;
@@ -108,49 +290,6 @@ header .homeButton {
 }
 
 
-#dynamicImage{
-    margin: 10%;
-    width: 65%;
-    height: auto;
-    max-width: 100vw;
-    opacity: 0;
-    transition: transform 1.1s ease-in-out, opacity 1s ease-in-out; 
-    transform: translate(100%,-20%);
-    z-index: 1;
-}
-
-#dynamicImage.active {
-    opacity: 1; 
-    transform: translate(0,-20%); 
-}
-
-#description.active {
-    opacity: 1;
-    transform: translate(0,90%);
-}
-
-#description.inactive {
-    opacity: 0;
-}
-#dynamicImage.inactive {
-    opacity: 0;
-    transform: translate(-100%,-20%);
-}
-
-#description{
-    position: absolute;
-    font-size: 44px;
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: bold;
-    text-align: center;
-    color: black;
-    width: 50%;
-    z-index: 3;
-    opacity: 0; 
-    transition: transform 1.1s ease-in-out, opacity 1.1s ease-in-out; 
-    transform: translate(120%,90%);
-    max-width: 100vw;
-}
 
 
 
@@ -176,11 +315,11 @@ header .homeButton {
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;  
 }
-#forSignup:hover{
+#forSignup:hover, .getToKnow:hover{
     background: rgb(237, 225, 211); 
+    color: rgb(126, 85, 57);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), 0 12px 24px rgba(0, 0, 0, 0.2); 
     transform: translateY(-2px);
-    color: rgb(126, 85, 57);
 }
 .buttonTemp:hover,  .bHeader:hover {
     background: rgba(255, 255, 255, 0.3);

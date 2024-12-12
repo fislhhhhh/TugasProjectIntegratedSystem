@@ -1,3 +1,77 @@
+.scrollPage {
+    /* seluruh layar*/
+    margin: 0;
+    padding: 0;
+    background-color: rgb(237, 225, 211);
+    padding-top: 5%;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    height:89%;
+    width: 100%;
+}
+
+
+
+
+ /* Bagian Header */
+header {
+    display: flex;
+    position: fixed;
+    height: 10%;
+    width: 100%;
+    background-color:rgb(237, 225, 211); 
+    justify-content: end;
+    z-index: 19;
+  
+
+  
+}
+
+header img {
+    height: 100%;
+    margin-right: auto;
+    padding-left: 10px;
+    transition: 0.5s;
+    align-self: center;
+}
+
+header div {
+    background-color: rgba(255, 255, 255, 0);
+    height: 100%;
+    width: 10%;
+    border: 0;
+    font-size: 15px;
+    display: flex;
+    font-weight: 700;
+    align-items: center;
+    font-family: "Montserrat", sans-serif;
+    transition: 0.5s;
+    margin: 0;
+    justify-content: center;
+
+
+}
+header div p{
+    align-self: center;
+    justify-self: center;
+    padding: 5px 20px;
+}
+
+header .homeButton {
+    height: 50%;
+    width: auto;
+    align-self: center;
+    justify-self: center;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bHeader, #forSignupDiv {
+    cursor: pointer;
+}
+
 #loginHal2{
     background-color: rgb(237, 225, 211);
 }
@@ -38,6 +112,7 @@
     width: 12%;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 
 }
 #forSignup{
@@ -48,6 +123,7 @@
     display: flex;
     align-items: center; 
     justify-content: center;
+    cursor: pointer;
    
  
 }
@@ -92,6 +168,7 @@
     justify-content: center;
     height: 48px;
     margin-top: 24px;
+    z-index: 10;
 }
 
 .getToKnow {
@@ -106,6 +183,7 @@
     height: 100%;
     margin: 0;
     padding: 0;
+    cursor: pointer;
 }
 
 
