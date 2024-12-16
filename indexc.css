@@ -234,7 +234,7 @@ body,html{
     gap: 15px;
     margin-top: 15px;
   }
-  .activityBox {
+  .activityBox, #otherA div{
     background-color: #f4f4f4;
     height: 200px;
     width: 260px;
@@ -245,9 +245,22 @@ body,html{
     font-size: 18px;
     cursor: pointer;
     transition: transform 0.3s, background-color 0.3s;
+    background-color: rgb(237, 225, 211);
+  }
+
+  #otherA img{
+   height: 25%;
+   width: auto;
+   margin: 0;
+   padding: 0;
+  }
+  #otherA h2{
+    color: rgb(126, 85, 57);
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px
   }
   
-  .activityBox:hover {
+  .activityBox:hover ,  #otherA div:hover{
     transform: scale(1.05);
     background-color: #e0f7fa;
   }
