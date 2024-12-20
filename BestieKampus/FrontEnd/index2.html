@@ -1,34 +1,31 @@
 <html lang="en">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/indexc.css">
+    <link rel="stylesheet" href="indexc.css">
 
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
   
-    <script type="module" src="regist.js" defer></script>
-    <script type="module" src="login.js" defer></script>
-    <script type="module"  src="loginPageJ.js" defer> </script>
-    <script type="module"  src="internAPI.js" defer> </script>
+    <script type="module" src="../BackEnd/regist.js" defer></script>
+    <script type="module" src="../BackEnd/login.js" defer></script>
+    <script type="module"  src="../BackEnd/loginPageJ.js" defer> </script>
+    <script type="module"  src="../BackEnd/internAPI.js" defer> </script>
 </head>
 <body class="bodyBukanHome">
     <header class="bukanHome">
-        <button onclick="toggleMenu()">menu</button>
-        <img src="img/logola.png" onclick="window.location.href='index.html';" alt="">
+        <button onclick="toggleMenu()">Menu</button>
+        <img src="../../img/logola.png" onclick="window.location.href='../../index.html';" alt="">
         
        
        
     </header>
     <div class="sideMenu">
-        <p>Dashboard</p>
-        <p>Profil</p>
-        <p>User Profilling</p>
-        <p>Journey</p>
-        <p>To-Do</p>
-        <P>Schedule</P>
-        <p>Setting</p>
-        <p>News</p>
-    </div>
+      <p onclick="window.location.href='index2.html';" >Dashboard</p>
+      <p onclick="window.location.href='profile.html';">Profil</p>
+      <p onclick="window.location.href='userProfilling.html';">User Profilling</p>
+      <p>To-Do</p>
+      <P>Schedule</P>
+  </div>
     <section class="content">
         <div class="pickBar">
             <div class="profilingPrompt">
@@ -60,18 +57,7 @@
                     <img src="" alt="">
                   </div>
                   <div class="recommendationList">
-                    <div class="activityBox">Rekomendasi 1</div>
-                    <div class="activityBox">Rekomendasi 2</div>
-                    <div class="activityBox">Rekomendasi 3</div>
-                    <div class="activityBox">Rekomendasi 4</div>
-                    <div class="activityBox">Rekomendasi 1</div>
-                    <div class="activityBox">Rekomendasi 2</div>
-                    <div class="activityBox">Rekomendasi 3</div>
-                    <div class="activityBox">Rekomendasi 4</div>
-                    <div class="activityBox">Rekomendasi 1</div>
-                    <div class="activityBox">Rekomendasi 2</div>
-                    <div class="activityBox">Rekomendasi 3</div>
-                    <div class="activityBox">Rekomendasi 4</div>
+                   
                   </div>
                 </div>
               
@@ -86,7 +72,7 @@
                 </div>
               </div>
               
-              <div class="activityDesc">
+              <div class="activityDesc" id="activityDesc">
                 <h3>Deskripsi Aktivitas</h3>
                 <p>Pilih salah satu aktivitas di sebelah kiri untuk melihat detail deskripsinya di sini.</p>
               </div>

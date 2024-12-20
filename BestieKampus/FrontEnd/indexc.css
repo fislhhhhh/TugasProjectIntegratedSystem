@@ -18,13 +18,13 @@ body,html{
 
 .bukanHome{
     display: flex;
-    display: flex;
     position: fixed;
     height: 10%;
     width: 100%;
     background-color:rgb(237, 225, 211); 
     justify-content: end;
     z-index: 10;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 .bukanHome img{
     height: 70%;
@@ -32,6 +32,23 @@ body,html{
     align-self: center;
     margin: auto;
     padding: 0;
+}
+.bukanHome button{
+  background-color:rgb(237, 225, 211); 
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Bayangan untuk efek 3D */
+  border: none;
+  width: 8%;
+  letter-spacing :2px; 
+  height: 80%;
+  justify-self: center;
+  align-self: center;
+  margin-left: 10px;
+  border-radius: 15px;
+  background: linear-gradient(135deg, rgba(126, 85, 57, 1) 0%, rgba(157, 107, 74, 1) 100%);
+
+
 }
 
 .sideMenu {
@@ -96,7 +113,13 @@ body,html{
     width: 100%;
     background-color: rgb(126, 85, 57);
     margin: 0;
-    margin-bottom: 20px;
+    background: linear-gradient(to bottom, #9B6B3D, #8C6143);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
+    background-color: #fff8e7; /* Warna lembut untuk tampilan modern */
+    border-bottom: 10px solid #f7d9a6;; /* Garis bawah hitam */
+    box-shadow: 0px 4px 4px -4px rgba(0, 0, 0, 0.5); /* Efek bayangan bawah */
+    z-index: 8;
+
 }
 .profilingPrompt {
     background-color: #f7d9a6;
@@ -219,39 +242,57 @@ body,html{
     padding: 10px;
     box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1); /* Memberikan efek 3D */
     background-color: #fff; /* Warna latar */
-    border-radius: 10px; /* Sudut melengkung */
+    padding-top: 20px;
+    background-color: rgb(237, 225, 211);
+    background-color: #fff8e7; /* Warna lembut untuk tampilan modern */
   }
   .recommendedActivities, .otherActivities {
-    background-color: #fff;
+    background-color:rgb(126, 85, 57);
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px rgba(126, 85, 57, 1);
+    
   }
-  
+  .activityC h3{
+    color: #e0f7fa;
+    font-family: "Nunito", sans-serif;
+    font-weight: bolder;
+    letter-spacing :1px; 
+    margin: 0;
+    padding: auto;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    font-size: 36px;
+  }
   .recommendationList, .otherActivityList {
     display: grid;
     grid-template-columns: repeat(2, 1fr); 
     gap: 15px;
     margin-top: 15px;
   }
-  .activityBox, #otherA div{
+  .activityBox, #otherA .job-listing{
     background-color: #f4f4f4;
-    height: 200px;
-    width: 260px;
-    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    height: 280px;
+    width: 320px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     text-align: center;
-    border-radius: 10px;
+    border-radius: 20px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
     font-size: 18px;
     cursor: pointer;
+    justify-content: center;
+    align-items: center;
     transition: transform 0.3s, background-color 0.3s;
-    background-color: rgb(237, 225, 211);
+    background: linear-gradient(135deg, rgba(237, 225, 211, 1) 0%, rgba(201, 180, 151, 1) 100%);
+ 
   }
 
   #otherA img{
    height: 25%;
    width: auto;
-   margin: 0;
+   margin: 8px;
    padding: 0;
   }
   #otherA h2{
@@ -259,20 +300,175 @@ body,html{
     font-family: "Montserrat", sans-serif;
     font-size: 20px
   }
-  
+  .company-name{
+    margin: 4px;
+    padding: 0;
+    font-size: 14px;
+    font-weight: 600;
+    color: rgb(90, 60, 40);
+    border-bottom: 1px solid rgba(126, 85, 57, 0.4);
+
+  }
+  .type-name {
+    display: flex;
+    margin: 0;
+    justify-self: start;
+    align-self: flex-start;
+    padding: 0;
+    margin-right: auto;
+    margin-left: 16px;
+    margin-top: 6px;
+    font-size: 14px; 
+    font-weight: bold; 
+    text-transform: uppercase; 
+    color:  #ffe1da;
+   
+    padding: 4px 12px; 
+    background: linear-gradient(to right, rgb(127, 85, 57), rgb(163, 128, 110)); 
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+    letter-spacing: 1px; 
+}
+
+  .job-title{
+    margin: 4px;
+  }
+  .job-industry{
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    padding: 4px 8px;
+    color: rgb(90, 60, 40);
+    font-weight: 600;
+    background-color: rgba(237, 225, 211, 0.5);
+    border-radius: 6px;
+    margin-top: 8px;
+  }
+  .wrapJob, .job-meta, .jobD-meta{
+    display: flex;
+    flex-direction: row;
+    margin: 8px;
+    height: 10%;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+  }
+  .job-meta, .jobD-meta{
+    height: 2%;
+    justify-content: start;
+    align-items: start;
+    padding: 0;
+    margin: 0;
+
+  }
+  .jobD-meta{
+    height: 20px;
+    width: auto;
+    margin-bottom: 20px;
+  }
+  .jobD-meta .jobD-type, .jobD-meta .jobD-level{
+    margin-left: 0;
+    margin-right: 5px;
+  }
+  .wrapJob p, .job-meta p, .jobD-meta p {
+    color: white;
+    background: rgb(126, 85, 57);
+    padding: 4px 8px;
+    margin-left: 6px;
+    height: 100%;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: capitalize;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 0.5px;
+}
+
   .activityBox:hover ,  #otherA div:hover{
     transform: scale(1.05);
-    background-color: #e0f7fa;
+
   }
   
   .activityDesc {
     width: 40%;
     padding: 20px;
-    background-color: #fff;
-    border-radius: 10px;
+    height: auto;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-    overflow-y: auto; /* Tambahkan scroll jika deskripsi panjang */
-    max-height: 600px; /* Batas tinggi deskripsi */
+    overflow-y: auto; 
+    max-height: 600px; 
+    background-color: #fff8e7; 
+    display: flex;
+    flex-direction: column;
+  }
+  .activityDesc h3{
+    font-family: "Montserrat", sans-serif;
+    margin-bottom:none ;
+  }
+  .activityDesc .job-header{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  .activityDesc .job-header img{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    margin-right:20px ;
+
+  }
+  .companyD-name{
+    font-size: 24px;
+    margin: 0;
+    padding: 0;
+
+  }
+  .jobD-geo{
+    margin: 0;
+    margin-top: 5px;
+  }
+  .job-header .company-info{
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: start;
+    height:60px;
+    background: linear-gradient(to right, rgb(127, 85, 57), rgb(163, 128, 110)); 
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+    letter-spacing: 1px; 
+    padding: 8px;
+    width: auto;
+    margin: 0;
+    margin-top: 0px;
+  }
+  .company-info div{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  .activityDesc h2{
+    font-size: 40px;
+    font-family: "Montserrat", sans-serif;
+  }
+
+  .btn-lamar{
+    background:#e76f51;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+    color: white;
+    width: 40%;
+    height: 48px;
+    border: none;
+    margin: 0;
+    padding: 0;
   }
   
   /* .btn.akademik {

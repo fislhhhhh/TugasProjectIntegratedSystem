@@ -13,7 +13,7 @@ const dynamicImage = document.getElementById('loginWrap');
 const description = document.getElementById('signUpWrap');
 const loginDy = document.getElementById('loginPu');
 const signUpDy = document.getElementById('signuPu');
-const sideMenu = document.querySelector('.sideMenu');
+
 
 let isImageVisible = true; 
 
@@ -36,6 +36,7 @@ function toggleContent() {
     isImageVisible = !isImageVisible;
 }
 let isMenuVisible = false; 
+const sideMenu = document.querySelector('.sideMenu');
 function toggleMenu() {
     console.log('toggleMenu dipanggil');
     if (isMenuVisible) {

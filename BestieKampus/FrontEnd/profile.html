@@ -1,0 +1,153 @@
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="indexc.css">
+  <link rel="stylesheet" href="profile.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+  <script type="module"  src="../BackEnd/profile.js" defer> </script>
+  <script type="module"  src="../BackEnd/loginPageJ.js" defer> </script>
+  <title>#BestieKampus</title>
+</head>
+<body>
+    <header class="bukanHome">
+        <button onclick="toggleMenu()">Menu</button>
+        <img src="../../img/logola.png" onclick="window.location.href='index.html';" alt="">
+        
+       
+       
+    </header>
+    <div class="sideMenu">
+        <p onclick="window.location.href='index2.html';" >Dashboard</p>
+        <p onclick="window.location.href='profile.html';">Profil</p>
+        <p onclick="window.location.href='userProfilling.html';">User Profilling</p>
+        <p>To-Do</p>
+        <P>Schedule</P>
+    </div>
+
+    <section class="scrollPage" id="loginHal4">
+        <section class="leftRight">
+            <div class="upper">
+                <div class="rightSide">
+                    <div class="up">
+                        <h1>My Profile</h1>
+                    </div>
+                    <div class="mid">
+                        <div class="containimg">
+                            <img src="" alt="">
+                        </div>
+                    </div>
+                    <div class="bot">
+                        <div class="namaPanggilan">
+                            <p id="namaPang">Faishal</p>
+                        </div>
+                        <div class="jurusan">
+                            <p id="jurus">Sistem dan Teknologi Informasi</p>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="leftSide">
+                    <div class="up">
+                        <h1></h1>
+                    </div>
+                    <div class="mid">
+                        <div class="leftMid">
+                            <div class="netPart">
+                                <p class="investedTotal">Name </p>
+                                <p class="investedTotalValue" id="investTotal"> </p>
+                            </div>
+                            <div class="netPart">
+                                <p class="investedTotal">Semester </p>
+                                <p class="investedTotalValue" id="gain"></p>
+                            </div>
+                            <div class="netPart">
+                                <p class="investedTotal">NIM</p>
+                                <p class="investedTotalValue">0</p>
+                            </div>
+                            <div class="netPart">
+                                <p class="investedTotal">Universitas</p>
+                                <p class="investedTotalValue">0</p>
+                            </div>
+                            <div class="netPartTotal">
+                                <p class="totalTotal">Poin Keaktifan</p>
+                                <p class="totalTotalValue" id="assetTotal"></p>
+                            </div>
+                        </div>
+                        <div class="rightMid">
+                            <h2>Aktivitas Terbaru</h2>
+                            <div class="listBaru">
+                                <img class="imgBaru" id="baruMagimg" src="" alt="">
+                                <div class="detListBaru">
+                                    <p class="listBaruCompany" id="baruMag"></p>
+                                    <p class="listBaruPosisi" id="posisiMag"></p>
+                                </div>
+                            </div>
+                            <div class="listBaru">
+                                <img class="imgBaru" id="baruUKMimg" src="" alt="">
+                                <div class="detListBaru">
+                                    <p class="listBaruCompany" id="baruUKM"></p>
+                                    <p class="listBaruPosisi" id="posisiUKM"></p>
+                                </div>
+                            </div>
+                            <div class="listBaru">
+                                <img class="imgBaru" id="baruPanimg" src="" alt="">
+                                <div class="detListBaru">
+                                    <p class="listBaruCompany" id="baruPan"></p>
+                                    <p class="listBaruPosisi" id="posisiPan"></p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="bot">
+                        <div class="allList">
+                            <div class="listPro" id="magangPart">
+                                <div class="badgeImg">
+                                    <img src="../../img/InternIc.png" class="imageLogo" alt="">
+                                    <h2>Magang</h2>
+                                    <p class="jumlahAkt" id="AktMagang">5</p>
+                                </div>
+                                <div class="badgeMagang" id="badgeMagang">
+                        
+                                </div>
+                                
+                            </div>
+                            <div class="listPro" id="UKMPart">
+                                <div class="badgeImg">
+                                    <img src="../../img/UKMIc.png" class="imageLogo" alt="">
+                                    <h2>UKM</h2>
+                                    <p class="jumlahAkt" id="AktUKM"></p>
+                                </div>
+                                <div class="badgeUKM" id="badgeUKM">
+
+                                </div>
+                                
+                            </div>
+                            <div class="listPro" id="panitPart">
+                                <div class="badgeImg">
+                                    <img src="../../img/ComiteeIc.png" class="imageLogo" alt="">
+                                    <h2>Kepanitiaan</h2>
+                                    <p class="jumlahAkt" id="AktPanit"></p>
+                                </div>
+                                <div class="badgeComit" id="badgeComit">
+
+                                </div>
+                                
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+                   
+                </div>
+            </div>
+           
+        </section>
+    </section>
+    
+   
+</body>
+
+</html>

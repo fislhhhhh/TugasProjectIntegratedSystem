@@ -30,7 +30,8 @@
     const user = userCredential.user;
     alert('login akun...')
     alert('akun terlogin')
-    window.location.href = "index2.html";
+    window.location.href = "BestieKampus/FrontEnd/index2.html";
+
     onLogin = true;
 
     // ...

@@ -1,0 +1,327 @@
+*{
+    box-sizing: border-box;
+}
+.scrollPage {
+    /* seluruh layar*/
+    margin: 0;
+    padding: 0;
+    background-color: rgb(237, 225, 211);
+    padding-top: 5%;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    height:100%;
+    width: 100%;
+}
+.sideMenu{
+    height: 100%;
+}
+
+.leftright{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+}
+.leftright .upper{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+    align-items: start;
+    justify-content: start;
+    background-color:rgb(126, 85, 57);
+    border-radius: 10px;
+    margin: 0;
+    padding: 0 ;
+    box-shadow: 0 4px 6px rgba(126, 85, 57, 0.3);
+    padding-left:40px ;
+    
+}
+.rightSide{
+    display: flex;
+    height: 100%;
+    width: 30%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    
+    
+
+
+}
+.up{
+    width: 100%;
+    height: 15%;
+  
+  
+}
+.up h1{
+   font-size: 48px;
+   margin-top: 8px;
+   margin-bottom: 0;
+   font-size: 56px;
+   letter-spacing: 1px; /* Memberikan jarak antar huruf */
+   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Menambahkan bayangan teks */
+   font-family: "Montserrat", sans-serif;
+   color: antiquewhite;
+}
+.mid{
+    width: 100%;
+    height: 60%;
+  
+}
+.mid .containimg{
+    width: 85%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(237, 225, 211, 1) 0%, rgba(201, 180, 151, 1) 100%);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2), 0 8px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.bot{
+    width: 100%;
+    height:25% ;
+    padding: 0;
+    
+}
+.bot .namaPanggilan{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    height: 41%;
+}
+.bot .jurusan{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    height: 25%;
+    padding: 0;
+}
+#namaPang{
+    font-family: "Nunito", sans-serif;
+    font-size: 48px;
+    margin: 0;
+    letter-spacing: 5px;
+    color: bisque;
+    font-weight: bolder;
+    margin-bottom: 0;
+}
+#jurus{
+    font-family: "Nunito", sans-serif;
+    color: bisque;
+    margin: 0;
+    padding: 0;
+    font-size: 24px;
+}
+.leftSide{
+    display: flex;
+    height: 100%;
+    width: 80%;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+
+    padding-right: 2%;
+}
+.leftSide .mid{
+    height:50% ;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+ 
+}
+.rightMid, .leftMid{
+    background: linear-gradient(135deg, rgba(237, 225, 211, 1) 0%, rgba(201, 180, 151, 1) 100%);
+    height: 100%;
+    width: 48.8%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2), 0 8px 20px rgba(0, 0, 0, 0.1);
+    padding: 2%;
+}
+.netBox {
+    background-color:#ffb001 ;/* Gradien dari kuning tua ke terang */
+    display: flex;
+    flex-direction: column;
+    height: 75%;
+    padding: 0;
+    padding-left: 4%;
+    padding-right: 4%;
+    border-radius: 12px;
+
+    /* Dekorasi tambahan */
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.15); /* Bayangan lembut */
+    border: 2px solid #e09e00; /* Border tipis dengan warna yang lebih tua */
+    color: #333; /* Warna teks yang kontras */
+    font-family: 'Arial', sans-serif; /* Font modern */
+    font-weight: 500;
+    transition: box-shadow 0.3s ease, transform 0.3s ease; /* Animasi halus */
+}
+
+.netPart{
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    height: 20%;
+    font-size: 20px;
+    font-family: "Nunito", sans-serif;
+    justify-content: center;
+    align-items: center;
+
+}
+.netPartTotal{
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    height: 20%;
+    font-size: 20px;
+    font-family: "Nunito", sans-serif;
+    margin-top: 5px;
+}
+.investedTotalValue{
+    margin-left: auto;
+}
+.totalTotal{
+    font-weight: bolder;
+}
+.totalTotalValue{
+    margin-left: auto;
+    font-weight: bolder;
+}
+
+.rightMid h2{
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    margin-bottom: 10px;
+
+}
+.listBaru{
+    width: 100%;
+    height: 25%;
+    background-color: #fff8e7; 
+    margin-bottom: 8px;
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.15); /* Bayangan lembut */
+    border:1px solid rgb(126, 85, 57);
+    justify-content: center;
+    align-items: center;
+}
+.detListBaru{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    margin-left: auto;
+    margin-right: 8px;
+
+}
+.listBaru img{
+    margin-left: 8px;
+}
+.listBaruCompany{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "Montserrat", sans-serif;
+    color: rgb(126, 85, 57);
+    justify-content: end;
+    align-items: end;
+    margin-top: 5px;
+}
+.listBaruPosisi{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    color: #e09e00;
+    margin-bottom: 0px;
+    font-family: "Nunito", sans-serif;
+    justify-content: end;
+    align-items: end;
+}
+.imgBaru{
+    height: 70%;
+    width: auto;
+    border-radius: 10px;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.15); /* Bayangan lembut */
+    border:1px solid rgb(126, 85, 57);
+}
+.leftSide .bot{
+    display: flex;
+    flex-direction: row;
+    
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2), 0 8px 20px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    height: 35%;
+}
+.allList{
+    height: 90%;
+    background-color: #fff8e7; 
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px;
+    padding-left: 2%;
+    padding-right: 2%;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+.listPro{
+    width: 33%;
+    font-family: "Nunito", sans-serif;
+    height: 100%;
+    color: rgb(126, 85, 57);
+}
+.badgeImg{
+    width: 90%;
+    height: 30%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    margin-top: 15px;
+    padding-right: 10px;
+    background: linear-gradient(135deg, rgba(237, 225, 211, 1) 0%, rgba(201, 180, 151, 1) 100%);
+    border-radius: 10px;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.15); /* Bayangan lembut */
+    border:1px solid rgb(126, 85, 57);
+    
+}
+.imageLogo{
+    height: 90%;
+    width: auto;
+}
+.jumlahAkt{
+    margin-left: auto;
+    font-weight: bolder;
+    font-size: 24px;
+}
+
+.badgeMagang, .badgeUKM, .badgeComit{
+    height: 55%;
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    grid-template-rows: repeat(2, 1fr);   
+    gap: 4px;
+    padding: 8px;
+}
+.imgGrid{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.15); /* Bayangan lembut */
+    border:1px solid rgb(126, 85, 57);
+}
