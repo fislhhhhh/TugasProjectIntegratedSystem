@@ -1,4 +1,4 @@
-import {  query, orderBy, limit, collection, getDocs } from "https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore.js";
+import {  query, orderBy, getDoc, collection, getDocs } from "https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore.js";
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.23.0/firebase-app.js";
 import { getFirestore, doc, setDoc,addDoc } from "https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore.js";
 import { getAuth, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/9.23.0/firebase-auth.js";
@@ -85,6 +85,27 @@ async function getLastMagang(uid) {
             document.getElementById("baruMagimg").src = lastData.companyLogo|| "N/A";
             return lastData;
         } 
+    } catch (error) {
+        console.error("Error fetching last donation:", error);
+        return null;
+    }
+}
+async function getProfile(uid) {
+    try {
+        // Query untuk mendapatkan dokumen terakhir berdasarkan timestamp
+        const userProfile = doc(db, `users/${uid}/ProfileData/main`);
+        const querySnapshot = await getDoc(userProfile);
+            const data = querySnapshot.data(); // Data dari dokumen terakhir
+
+            // Update elemen HTML dengan data dari dokumen terakhir
+            document.getElementById("namaPang").textContent = data.Name || "N/A";
+            document.getElementById("jurus").textContent = data.Major|| "N/A";
+            document.getElementById("fullNama").textContent = data.FullName|| "N/A";
+            document.getElementById("smstr").textContent = data.Semester|| "N/A";
+            document.getElementById("nimm").textContent = data.Nim|| "N/A";
+            document.getElementById("univ").textContent = data.Univeristy|| "N/A";
+            return data;
+        
     } catch (error) {
         console.error("Error fetching last donation:", error);
         return null;
@@ -182,6 +203,7 @@ document.addEventListener("DOMContentLoaded", () => {
             getLastMagang(user.uid);
             countPoint(user.uid);
             generateImg(user.uid);
+            getProfile(user.uid);
             
 
         } else {

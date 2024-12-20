@@ -7,6 +7,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
   <script type="module"  src="../BackEnd/loginPageJ.js" defer> </script>
+  <script type="module"  src="../BackEnd/user.js" defer> </script>
 
   <title>#BestieKampus</title>
 </head>
@@ -26,34 +27,45 @@
         <P>Schedule</P>
     </div>
 
-    <section class="scrollPage" id="loginHal4">
-        <section class="leftRight">
-            <div class="bottom">
-                <div class="rightSide">
-                    <h1>User Profilling</h1>
-                    <p>Silahkan Isi Pertanyaan Berikut </p>
-                </div>
-                <div class="leftSide">
-                   
-                </div>
-                
-            </div>
-            <div class="upper">
-                <div class="rightSide">
-                    <div class="queBox">
-
+    <section class="scrollPage">
+        <div class="ats">
+            <div class="profile-page">
+                <form class="profile-form">
+                    <h2>..........</h2>
+                    <div class="form-group">
+                        <label for="full-name">Nama Panjang:</label>
+                        <input type="text" id="full-name" name="full-name" placeholder="Masukkan Nama Panjang" required>
                     </div>
-                </div>
-                <div class="leftSide">
-                    <div class="queBox">
-
+                    <div class="form-group">
+                        <label for="nickname">Nama Panggilan:</label>
+                        <input type="text" id="nickname" name="nickname" placeholder="Masukkan Nama Panggilan" required>
                     </div>
-                   
-                </div>
+                    <div class="form-group">
+                        <label for="semester">Semester:</label>
+                        <input type="number" id="semester" name="semester" min="1" max="14" placeholder="Masukkan Semester" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="university">Universitas:</label>
+                        <input type="text" id="university" name="university" placeholder="Masukkan Universitas" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="major">Jurusan:</label>
+                        <input type="text" id="major" name="major" placeholder="Masukkan Jurusan" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="nim">NIM:</label>
+                        <input type="number" id="nim" name="nim" placeholder="Masukkan NIM" required>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn-submit">Submit</button>
+                        <p class="soon">advanced user Profilling coming SOON!</p>
+                    </div>
+                </form>
             </div>
-           
-        </section>
+            
+        </div>
     </section>
+    
     
    
 </body>
